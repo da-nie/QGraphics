@@ -138,7 +138,8 @@ void CVideo_Qt::GetStringImageSize(const char *string,uint32_t &width,uint32_t &
  QPainter qPainter(qPixmap_Ptr.get());
  QFontMetrics qFontMetrics(qPainter.font());
  QRect qRect=qFontMetrics.boundingRect(string);
- width=qRect.width();
+// width=qRect.width();
+ width = qFontMetrics.horizontalAdvance(string);
  height=qRect.height();
 }
 //----------------------------------------------------------------------------------------------------
