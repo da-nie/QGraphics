@@ -61,7 +61,6 @@ bool CQuadric::Execute(const std::vector<CGrPoint> &input,std::vector<CGrPoint> 
  CStep cStep(size-3,step,input);
  long double x;
  size_t point;
- cStep.GetPos(x,point);
 
  bool first_step=true;
  //коэффициенты полинома

@@ -75,6 +75,8 @@ CLabel_ImageArea::~CLabel_ImageArea()
 //----------------------------------------------------------------------------------------------------
 void CLabel_ImageArea::timerEvent(QTimerEvent *qTimerEvent_Ptr)
 {
+ if (qTimerEvent_Ptr->timerId()!=TimerId) return;
+
  //переводим координаты курсора в систему координат виджета
  QPoint qPoint=mapFromGlobal(cursor().pos());
  int32_t x=qPoint.x();

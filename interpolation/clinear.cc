@@ -60,7 +60,6 @@ bool CLinear::Execute(const std::vector<CGrPoint> &input,std::vector<CGrPoint> &
  CStep cStep(size-2,step,input);
  long double x;
  size_t point;
- cStep.GetPos(x,point);
 
  bool first_step=true;
  //коэффициенты полинома

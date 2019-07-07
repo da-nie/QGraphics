@@ -118,8 +118,6 @@ bool CCubicSpline::Execute(const std::vector<CGrPoint> &input,std::vector<CGrPoi
  CStep cStep(size-2,step,input);
  long double x;
  size_t point;
- cStep.GetPos(x,point);
-
 
  //коэффициенты полинома
  long double a;
